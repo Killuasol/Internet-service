@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+            name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <title>Title</title>
+    <link href="../css/styles.css" rel="stylesheet"/>
+    <link href="../reset.css" rel="stylesheet"/>
+    <link href="../pages/index.html" rel=""/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="container">
+
+<header class="head">
+    <a href="../pages/index.html" class="head__text">DreamTrip</a>
+</header>
+
+<main class="contain-card">
+    <div class="first-bloc">
+        <form class="first-bloc__form form-dis" action="../pages/card.html" method="get">
+            <div class="form-dis__bloc">
+                <label class="first-bloc__text" for="now">Откуда:</label>
+                <input class="first-bloc__text-small first-bloc__field" disabled id="now" name="location" placeholder="Search..." type="text">
+            </div>
+            <div class="form-dis__bloc">
+                <label class="first-bloc__text" for="then">Куда:</label>
+                <input class="first-bloc__text-small first-bloc__field" disabled id="then" name="location" placeholder="Search..." type="text">
+            </div>
+            <div class="form-dis__bloc">
+                <label class="first-bloc__text" for="date">Дата:</label>
+                <input class="first-bloc__text-small first-bloc__field" disabled id="date" name="route-date" placeholder="Search..." type="text">
+            </div>
+        </form>
+
+        <div class="vehicle">
+            <h2 class="vehicle__text">Выбор средства передвижения:</h2>
+            <ul class="vehicle__bloc">
+                <li class="vehicle__list">
+                    <div class="vehicle__list__con"><img class="vehicle__list__img" src="../img/car.svg" alt="car"></div>
+                    <button class="vehicle__list__button vehicle__list__text">Автомобиль</button>
+                </li>
+                <li class="vehicle__list">
+                    <div class="vehicle__list__con"><img class="vehicle__list__img" src="../img/train.svg" alt=""></div>
+                    <button class="vehicle__list__button vehicle__list__text">Поезд</button>
+                </li>
+                <li class="vehicle__list">
+                    <div class="vehicle__list__con"><img class="vehicle__list__img" src="../img/plane.svg" alt=""></div>
+                    <button class="vehicle__list__button vehicle__list__text">Самолёт</button>
+                </li>
+            </ul>
+        </div>
+        <div class="calculation ">
+        </div>
+    </div>
+
+    <div class="map">
+        <button class="return"><a href="../pages/index.html">Назад к вводу данных</a></button>
+        <div class="map__bloc"></div>
+    </div>
+</main>
+
+<footer class="dream">
+    <div class="dream__log">
+        <a href="../pages/index.html" class="dream__log__name">DreamTrip</a>
+        <time class="dream__log__date" datetime="2024">© 2024 интернет-сервис</time>
+    </div>
+
+    <div class="dream__info">
+        <!--<p class="dream__info__text">
+            <a href="">Помощь</a>
+        </p>-->
+        <div id="modal-container">
+            <div class="modal-background">
+                <div class="modal">
+                    <h2>Задавайте вопросы по электронной почте:</h2>
+                    <a href="mailto:vlad@htmlbook.ru?subject=Вопрос по HTML"> </a>
+                    <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+                        <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="buttons">
+                <div id="one" class="button">Контакты</div>
+            </div>
+        </div>
+
+        <div id="modal-container1">
+            <div class="modal-background">
+                <div class="modal">
+                    <h2>Звоните в рабочее время:</h2>
+                    <p>+7-***-***-**-**</p>
+                    <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+                        <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="buttons">
+                <div id="one1" class="button1">Помощь</div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../js/for-card.js"></script>
+<script src="../js/sketch.js"></script>
+</body>
+</html>

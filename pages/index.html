@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+            name="viewport"
+    />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <title>Title</title>
+    <link href="../css/styles.css" rel="stylesheet"/>
+    <link href="../reset.css" rel="stylesheet"/>
+    <link href="../pages/card.html" rel=""/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body class="container">
+
+<header class="head">
+    <a href="../pages/index.html" class="head__text">DreamTrip</a>
+</header>
+
+<main class="contain">
+    <div class="introduction">
+        <p class="introduction__text">Добро пожаловать!</p>
+        <h2 class="introduction__text">Мы здесь, чтобы помочь Вам выбрать подходящий маршрут для незабываемого путешествия!</h2>
+    </div>
+
+    <div class="route">
+        <form class="route__from route__date" action="../pages/card.html" method="get">
+            <label class="route__from__text" for="location-now">Текущее местонахождение:</label>
+            <input class="route__from__text route__from__field" id="location-now" name="location" placeholder="Search..." type="text">
+            <label class="route__from__text route__from__mar" for="location-then">Желаемое местонахождение:</label>
+            <input class="route__from__text route__from__mar route__from__field" id="location-then" name="location" placeholder="Search..." type="text">
+            <label class="route__date__text" for="route-date">Дата отправления:</label>
+            <input class="route__date__text route__date__field" id="route-date" name="route-date" placeholder="Search..." type="text">
+            <input class="route__button route__date__text" id="submitButton" type="submit" value="Поиск">
+        </form>
+
+        <img class="route__position-arrow" alt="arrow" src="../img/arrow.svg">
+        <img class="route__position" alt="location" src="../img/location.svg">
+    </div>
+</main>
+
+<footer class="dream">
+    <div class="dream__log">
+        <a href="../pages/index.html" class="dream__log__name">DreamTrip</a>
+        <time class="dream__log__date" datetime="2024">© 2024 интернет-сервис</time>
+    </div>
+
+    <div class="dream__info">
+        <!--<p class="dream__info__text">
+            <a href="">Помощь</a>
+        </p>-->
+        <div id="modal-container">
+            <div class="modal-background">
+                <div class="modal">
+                    <h2>Задавайте вопросы по электронной почте:</h2>
+                    <a href="mailto:vlad@htmlbook.ru?subject=Вопрос по HTML"> </a>
+                    <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+                        <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="buttons">
+                <div id="one" class="button">Контакты</div>
+            </div>
+        </div>
+
+        <div id="modal-container1">
+            <div class="modal-background">
+                <div class="modal">
+                    <h2>Звоните в рабочее время:</h2>
+                    <p>+7-***-***-**-**</p>
+                    <svg class="modal-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+                        <rect x="0" y="0" fill="none" width="226" height="162" rx="3" ry="3"></rect>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="buttons">
+                <div id="one1" class="button1">Помощь</div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../js/for-index.js"></script>
+<script src="../js/sketch.js"></script>
+</body>
+</html>
